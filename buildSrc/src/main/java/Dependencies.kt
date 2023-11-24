@@ -16,6 +16,16 @@ object Dependencies {
     val tooling by lazy {"androidx.compose.ui:ui-tooling"}
     val testManifest by lazy {"androidx.compose.ui:ui-test-manifest"}
     val appCompat by lazy {"androidx.appcompat:appcompat:${Versions.appCompatVersion}"}
+
+    // dagger hilt
+    val hiltAndroid by lazy {"com.google.dagger:hilt-android:${Versions.hiltAndroidVersion}"}
+    val hiltCompiler by lazy {"com.google.dagger:hilt-compiler:${Versions.hiltAndroidVersion}"}
+    val androidTestImplementaiton by lazy {"com.google.dagger:hilt-android-testing:${Versions.hiltAndroidVersion}"}
+    val androidTestAnnotationProcess by lazy {"com.google.dagger:hilt-compiler:${Versions.hiltAndroidVersion}"}
+    val hiltAndroidTesting by lazy {"com.google.dagger:hilt-android-testing:${Versions.hiltAndroidVersion}"}
+    val hiltCompilerTest by lazy {"com.google.dagger:hilt-compiler:${Versions.hiltAndroidVersion}"}
+
+    val hiltNavigationCompose by lazy {"androidx.hilt:hilt-navigation-compose:${Versions.hiltNavVersion}"}
 }
 
 object Modules {

@@ -9,4 +9,6 @@ object Versions {
     const val composeBomTestVersion = "2023.03.00"
     const val appCompatVersion = "1.6.1"
     const val composeMaterial = "1.10.0"
+    const val hiltAndroidVersion = "2.48.1"
+    const val hiltNavVersion = "1.1.0"
 }
