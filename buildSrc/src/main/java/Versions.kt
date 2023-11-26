@@ -11,4 +11,10 @@ object Versions {
     const val composeMaterial = "1.10.0"
     const val hiltAndroidVersion = "2.48.1"
     const val hiltNavVersion = "1.1.0"
+    const val retrofitVersion = "2.9.0"
+    const val gsonVersion = "2.9.0"
+    const val okHttpVersion = "4.11.0"
+    const val moshiVersion = "1.15.0"
+    const val moshiConverter = "2.9.0"
+    const val loggingInterceptorVersion = "4.11.0"
 }

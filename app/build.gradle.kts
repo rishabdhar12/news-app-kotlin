@@ -85,6 +85,13 @@ dependencies {
     kaptTest(Dependencies.hiltCompilerTest)
 
     implementation(Dependencies.hiltNavigationCompose)
+
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.gsonConverter)
+    implementation(Dependencies.okhttp)
+    implementation(Dependencies.moshi)
+    implementation(Dependencies.moshiConverter)
+    implementation(Dependencies.loggingInterceptor)
 }
 
 kapt {
