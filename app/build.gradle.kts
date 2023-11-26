@@ -63,6 +63,7 @@ dependencies {
     implementation(Dependencies.ComposeGraphics)
     implementation(Dependencies.ComposeToolingPreview)
     implementation(Dependencies.Composematerial3)
+    implementation(project(mapOf("path" to ":buildSrc")))
     testImplementation(Dependencies.junit)
     androidTestImplementation(Dependencies.testExtJunit)
     androidTestImplementation(Dependencies.testEspresso)

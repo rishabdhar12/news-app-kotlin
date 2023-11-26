@@ -32,7 +32,7 @@ object Dependencies {
 
     val okhttp by lazy {"com.squareup.okhttp3:okhttp:${Versions.okHttpVersion}"}
 
-    val moshi by lazy {"com.squareup.moshi.moshi-kotlin:${Versions.moshiVersion}"}
+    val moshi by lazy {"com.squareup.moshi:moshi-kotlin:${Versions.moshiVersion}"}
     val moshiConverter by lazy {"com.squareup.retrofit2:converter-moshi:${Versions.moshiConverter}"}
 
     val loggingInterceptor by lazy {"com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptorVersion}"}
