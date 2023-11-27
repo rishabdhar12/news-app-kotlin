@@ -63,7 +63,6 @@ dependencies {
     implementation(Dependencies.ComposeGraphics)
     implementation(Dependencies.ComposeToolingPreview)
     implementation(Dependencies.Composematerial3)
-    implementation(project(mapOf("path" to ":buildSrc")))
     testImplementation(Dependencies.junit)
     androidTestImplementation(Dependencies.testExtJunit)
     androidTestImplementation(Dependencies.testEspresso)
@@ -93,6 +92,9 @@ dependencies {
     implementation(Dependencies.moshi)
     implementation(Dependencies.moshiConverter)
     implementation(Dependencies.loggingInterceptor)
+
+    implementation(Dependencies.coroutines)
+    implementation(Dependencies.coroutinesAndroid)
 }
 
 kapt {

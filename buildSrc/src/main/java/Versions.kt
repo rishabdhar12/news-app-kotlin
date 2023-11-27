@@ -17,4 +17,6 @@ object Versions {
     const val moshiVersion = "1.15.0"
     const val moshiConverter = "2.9.0"
     const val loggingInterceptorVersion = "4.11.0"
+    const val coroutinesVersion = "1.7.3"
+    const val coroutinesAndroidVersion = "1.7.3"
 }

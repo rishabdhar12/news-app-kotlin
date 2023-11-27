@@ -1,5 +1,8 @@
 package com.example.newsinshorts.di
 
+import com.example.newsinshorts.data.api.ApiService
+import com.example.newsinshorts.data.datasource.NewsDataSource
+import com.example.newsinshorts.data.datasource.NewsDataSourceImpl
 import com.example.utilities.ApiConstants
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -38,7 +41,23 @@ class AppModule {
             .Builder()
             .baseUrl(ApiConstants.BASE_URL)
             .client(httpClient.build())
-            .addConverterFactory(MoshiConverterFactory.create())
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
     }
+
+    @Singleton
+    @Provides
+    fun providesApiService(retrofit: Retrofit): ApiService {
+        return retrofit.create(ApiService::class.java)
+    }
+
+    @Singleton
+    @Provides
+    fun providesNewsDataSource(apiService: ApiService): NewsDataSource {
+        return NewsDataSourceImpl(apiService)
+    }
 }
+
+
+
+
